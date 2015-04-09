@@ -6,7 +6,6 @@ $.fn.back2top = function(){
         'border-radius': '38px',
         'line-height': '38px',
         'text-align': 'center',
-        'font-size': '18px',
         'color': '#ffffff',
         'background': '#3498db',
         'position': 'fixed',
@@ -15,7 +14,7 @@ $.fn.back2top = function(){
         'display': 'none',
         'opacity': '.7'
     };
-    this.css(backTopCss).html('<span class="glyphicon glyphicon-chevron-up"></span>');
+    this.css(backTopCss).html('Top');
     this.click(function(){
         body.animate({scrollTop: 0}, 600);
     });
